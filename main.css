@@ -1,0 +1,72 @@
+
+body {
+  font-family: 'Unica One', arial;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(52, 124, 199)
+}
+h1{
+  padding-left: 7%;
+  color: white;
+  font-size: 3em;
+}
+#simon {
+  width: 100%;
+  background-color: rgb(84, 84, 84);
+}
+.square {
+  margin: auto;
+  width: 50vw;
+  height: 50vw;
+  text-align: center;
+}
+
+.contents{
+  padding: 1%;
+  -webkit-box-shadow:rgb(0, 0, 0) 0px 0px 20px -4px;
+     -moz-box-shadow:rgb(0, 0, 0) 0px 0px 20px -4px;
+          box-shadow:rgb(0, 0, 0) 0px 0px 20px -4px;
+  border:4px solid rgb(255, 255, 255);
+  -webkit-border-radius:8%;
+     -moz-border-radius:8%;
+          border-radius:8%;
+  background-color:rgb(84, 84, 84);
+  width:100%;
+  height:100%;
+}
+
+button {
+  border: 4px white solid;
+  -webkit-border-radius:8%;
+  -moz-border-radius:8%;
+  border-radius:8%;
+  margin: 2%;
+  height: 46%;
+  width: 46%;
+}
+.example-enter {
+    opacity: 0;
+    transform:   translate(-250px,0);
+    transform: translate3d(-250px,0,0);
+}
+.example-enter.example-enter-active {
+	opacity: 1;
+	transform:   translate(0,0);
+	transform: translate3d(0,0,0);
+	transition-property: transform, opacity;
+	transition-duration: 300ms;
+	transition-timing-function: cubic-bezier(0.175, 0.665, 0.320, 1), linear;
+}
+.example-leave {
+	opacity: 1;
+	transform:   translate(0,0,0);
+	transform: translate3d(0,0,0);
+	transition-property: transform, opacity;
+	transition-duration: 300ms;
+	transition-timing-function: cubic-bezier(0.175, 0.665, 0.320, 1), linear;
+}
+.example-leave.example-leave-active {
+	opacity: 0;
+	transform:   translate(250px,0);
+	transform: translate3d(250px,0,0);
+}
